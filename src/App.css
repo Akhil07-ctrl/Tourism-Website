@@ -1,0 +1,99 @@
+/* Base styles and glassmorphic background */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ece9e6;
+}
+
+/* Carousel container adjustments */
+.custom-carousel {
+  width: 100%;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+/* Ensure images fill the container and maintain aspect ratio */
+.carousel-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .custom-carousel {
+    height: 200px;
+  }
+  .carousel-image {
+    height: 200px;
+  }
+}
+
+/* Small Devices (Landscape Phones, 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .custom-carousel {
+    height: 250px;
+  }
+  .carousel-image {
+    height: 250px;
+  }
+}
+
+/* Medium Devices (Tablets, 768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .custom-carousel {
+    height: 300px;
+  }
+  .carousel-image {
+    height: 300px;
+  }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) {
+  .custom-carousel {
+    height: 750px;
+  }
+  .carousel-image {
+    height: 750px;
+  }
+}
+
+/* Responsive Breakpoints */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .brand-heading {
+    font-size: 1.4rem;
+  }
+  .custom-carousel {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .brand-heading {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .brand-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .brand-heading {
+    font-size: 1.9rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .brand-heading {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,130 @@
+/* Base Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
+}
+
+/* Destination Container */
+.destination-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Destination List */
+.destination-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each Destination Card */
+.destination-list-item {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, background 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.destination-list-item:hover {
+  transform: scale(1.03);
+}
+
+/* Favorite State Styling */
+.destination-list-item.favorite {
+  background: rgba(255, 223, 186, 0.4); /* Change to a warm highlight color */
+}
+
+/* Link Styling */
+.destination-link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 16px;
+}
+
+/* Destination Image */
+.destination-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Favorite Button */
+.favorite-button {
+  width: 100%;
+  border: none;
+  background: rgba(179, 129, 129, 0.25);
+  color: #333;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  transition: background 0.3s ease;
+}
+
+.favorite-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Design */
+
+/* Extra Small Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .destination-list {
+      gap: 10px;
+  }
+  .destination-list-item {
+      max-width: 100%;
+  }
+  .destination-link {
+      padding: 12px;
+  }
+  .favorite-button {
+      padding: 10px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Small Devices (min-width: 576px) and (max-width: 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .destination-list {
+      gap: 15px;
+  }
+  .destination-list-item {
+      max-width: 45%;
+  }
+}
+
+/* Medium Devices (min-width: 768px) and (max-width: 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .destination-list-item {
+      max-width: 30%;
+  }
+}
+
+/* Large Devices (min-width: 992px) and (max-width: 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .destination-list-item {
+      max-width: 22%;
+  }
+}
+
+/* Extra Large Devices (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .destination-list-item {
+      max-width: 18%;
+  }
+}

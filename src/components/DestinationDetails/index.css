@@ -1,0 +1,124 @@
+/* Base Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
+}
+
+/* Detail Container */
+.detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Headings */
+.detail-container h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Detail Image */
+.detail-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+/* Paragraph Styling */
+.detail-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Detail Button */
+.detail-button {
+  background: rgba(179, 129, 129, 0.25);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.detail-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Design */
+
+/* Extra Small Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .detail-container {
+      margin: 20px;
+      padding: 16px;
+  }
+  .detail-container h2 {
+      font-size: 1.5rem;
+  }
+  .detail-container p {
+      font-size: 0.9rem;
+  }
+  .detail-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Small Devices (min-width: 576px) and (max-width: 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .detail-container {
+      padding: 18px;
+  }
+  .detail-container h2 {
+      font-size: 1.75rem;
+  }
+  .detail-container p {
+      font-size: 1rem;
+  }
+}
+
+/* Medium Devices (min-width: 768px) and (max-width: 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .detail-container {
+      padding: 20px;
+  }
+  .detail-container h2 {
+      font-size: 2rem;
+  }
+  .detail-container p {
+      font-size: 1rem;
+  }
+}
+
+/* Large Devices (min-width: 992px) and (max-width: 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .detail-container h2 {
+      font-size: 2.2rem;
+  }
+  .detail-container p {
+      font-size: 1.05rem;
+  }
+}
+
+/* Extra Large Devices (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .detail-container h2 {
+      font-size: 2.5rem;
+  }
+  .detail-container p {
+      font-size: 1.1rem;
+  }
+}
