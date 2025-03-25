@@ -19,7 +19,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Tourism-Website">
         <Header />
         {/* Bootstrap Carousel */}
         <Carousel className='custom-carousel'>
